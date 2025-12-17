@@ -313,6 +313,8 @@
   filter: brightness(1.05) contrast(1.05);
   /* No transform changes on hover to prevent motion */
   transform: translate3d(0, 0, 0) rotate(var(--rotate, 0deg)) !important;
+  /* Pause animation on hover to completely stop any motion */
+  animation-play-state: paused !important;
 }
 
 .polaroid:active {
@@ -322,6 +324,8 @@
   filter: brightness(1.08) contrast(1.08);
   /* No transform changes on active to prevent motion */
   transform: translate3d(0, 0, 0) rotate(var(--rotate, 0deg)) !important;
+  /* Pause animation on active to completely stop any motion */
+  animation-play-state: paused !important;
 }
 
 .polaroid img {
@@ -614,6 +618,8 @@
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
     filter: brightness(1.08) contrast(1.08);
     /* No transform changes to prevent motion */
+    /* Pause animation on hover to completely stop any motion */
+    animation-play-state: paused !important;
   }
 }
 
@@ -1343,5 +1349,7 @@
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
     filter: brightness(1.08) contrast(1.08);
     /* No transform changes to prevent motion */
+    /* Pause animation on hover to completely stop any motion */
+    animation-play-state: paused !important;
   }
 }
