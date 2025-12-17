@@ -10,6 +10,18 @@ using System.Text.Json.Serialization;
 // Configure services
 var builder = WebApplication.CreateBuilder(args);
 
+// Configure Kestrel to listen on the PORT environment variable (Azure Container Apps)
+// Falls back to 8080 if PORT is not set or invalid
+builder.WebHost.ConfigureKestrel(options =>
+{
+    var portString = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+    if (!int.TryParse(portString, out var port) || port < 1 || port > 65535)
+    {
+        port = 8080;
+    }
+    options.ListenAnyIP(port);
+});
+
 builder.AddServiceDefaults();
 
 // Add DbContext using an in-memory database
