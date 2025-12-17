@@ -112,7 +112,7 @@ const Home: React.FC = () => {
             </div>
 
             {/* Bottom polaroids (6 o'clock position) */}
-            <div className="polaroid polaroid-1" style={{ top: '-15%', left: '40%', transform: 'translate(-50%, 0) rotate(7deg)', animationDelay: '-37s', '--rotate': '6deg' } as React.CSSProperties}>
+            <div className="polaroid polaroid-1" style={{ bottom: '-15%', left: '50%', transform: 'translate(-50%, 0) rotate(7deg)', animationDelay: '-37s', '--rotate': '6deg' } as React.CSSProperties}>
               <img src={`${process.env.PUBLIC_URL}/images/pets/dog5.jpg`} alt="Dog" />
               <p>Sunny strolls</p>
             </div>
@@ -137,18 +137,18 @@ const Home: React.FC = () => {
               <p>Window watcher</p>
             </div>
             {/* Inner circle polaroids - offset but not too close to center to avoid feature cards */}
-            <div className="polaroid polaroid-1" style={{ top: '-15%', left: '30%', transform: 'translate3d(0, 0, 0) rotate(-3deg)', animationDelay: '-47s', '--rotate': '-3deg' } as React.CSSProperties}>
+            <div className="polaroid polaroid-1" style={{ top: '-18%', left: '35%', transform: 'translate3d(0, 0, 0) rotate(-3deg)', animationDelay: '-47s', '--rotate': '-3deg' } as React.CSSProperties}>
               <img src={`${process.env.PUBLIC_URL}/images/pets/cat3.jpg`} alt="Cat" />
               <p>Curious kitty</p>
             </div>
-            <div className="polaroid polaroid-2" style={{ top: '-19%', right: '31%', transform: 'translate3d(0, 0, 0) rotate(2deg)', animationDelay: '-31s', '--rotate': '2deg' } as React.CSSProperties}>
+            <div className="polaroid polaroid-2" style={{ top: '-18%', right: '35%', transform: 'translate3d(0, 0, 0) rotate(2deg)', animationDelay: '-31s', '--rotate': '2deg' } as React.CSSProperties}>
               <img src={`${process.env.PUBLIC_URL}/images/pets/dog8.jpg`} alt="Dog" />
               <p>Backyard hangout!</p>
             </div>
-            <div className="polaroid polaroid-3" style={{ bottom: '-12%', right: '30%', transform: 'translate3d(0, 0, 0) rotate(-2deg)', animationDelay: '-27s', '--rotate': '-2deg' } as React.CSSProperties}>
+            <div className="polaroid polaroid-3" style={{ bottom: '-18%', right: '35%', transform: 'translate3d(0, 0, 0) rotate(-2deg)', animationDelay: '-27s', '--rotate': '-2deg' } as React.CSSProperties}>
               <img src={`${process.env.PUBLIC_URL}/images/pets/dog4.png`} alt="Dog" />
               <p>Park adventures</p>
-            </div>            <div className="polaroid polaroid-4" style={{ bottom: '-14%', left: '40%', transform: 'translate3d(0, 0, 0) rotate(3deg)', animationDelay: '-23s', '--rotate': '3deg' } as React.CSSProperties}>
+            </div>            <div className="polaroid polaroid-4" style={{ bottom: '-18%', left: '35%', transform: 'translate3d(0, 0, 0) rotate(3deg)', animationDelay: '-23s', '--rotate': '3deg' } as React.CSSProperties}>
               <img src={`${process.env.PUBLIC_URL}/images/pets/dog-9.jpg`} alt="Dog" />
               <p>Fall in Seattle</p>
             </div>
