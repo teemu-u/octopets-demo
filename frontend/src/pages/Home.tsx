@@ -151,16 +151,19 @@ const Home: React.FC = () => {
               <img src={`${process.env.PUBLIC_URL}/images/pets/dog4.png`} alt="Dog" />
               <p>Park adventures</p>
             </div>
+
             {/* Inner circle - 5 o'clock position */}
             <div className="polaroid polaroid-4" style={{ bottom: '-8%', right: '28%', transform: 'translate3d(0, 0, 0) rotate(3deg)', animationDelay: '-23s', '--rotate': '3deg' } as React.CSSProperties}>
               <img src={`${process.env.PUBLIC_URL}/images/pets/dog-9.jpg`} alt="Dog" />
               <p>Fall in Seattle</p>
             </div>
+
             {/* Inner circle - 7 o'clock position */}
             <div className="polaroid polaroid-5" style={{ bottom: '-8%', left: '28%', transform: 'translate3d(0, 0, 0) rotate(-5deg)', animationDelay: '-18s', '--rotate': '-5deg' } as React.CSSProperties}>
               <img src={`${process.env.PUBLIC_URL}/images/pets/dog11.png`} alt="Dog" />
               <p>Cozy companion</p>
             </div>
+
             {/* Inner circle - 8 o'clock position */}
             <div className="polaroid polaroid-1" style={{ top: '62%', left: '22%', transform: 'translate3d(0, 0, 0) rotate(4deg)', animationDelay: '-42s', '--rotate': '4deg' } as React.CSSProperties}>
               <img src={`${process.env.PUBLIC_URL}/images/pets/dog12.jpg`} alt="Dog" />
